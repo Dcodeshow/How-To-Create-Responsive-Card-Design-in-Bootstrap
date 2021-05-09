@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+}
+
+
+/***************/
+
+.mtb-50 {
+    margin: 50px auto;
+}
+
+.heading-box h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000000;
+    border-bottom: 1px solid #ffde00;
+    display: table;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 0 15px 10px;
+    font-size: 25px;
+}
+
+.listing-card {
+    border: 1px solid #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.listing-card .image img {
+    width: 100%;
+}
+
+.listing-card .info {
+    padding: 15px 20px;
+    width: calc(100% - 160px);
+}
+
+.listing-card .info h4 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.listing-card .info span {
+    color: #a3a3a3;
+    font-size: 14px;
+}
+
+.listing-card .info h6 {
+    color: #ff2020;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.listing-card .info p {
+    color: #4c4c4c;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/****/
+
+.position-relative {
+    position: relative;
+}
+
+.listing-booking-card {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    border-top: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+.listing-booking-card .logo-card {
+    text-align: center;
+}
+
+.listing-booking-card .logo-card img {
+    width: 108px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.listing-booking-card span {
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    top: 6px;
+}
+
+.listing-booking-card h4 {
+    text-align: center;
+    color: #67ba2a;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.btn-yellow {
+    background: #ffde00;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 6px 25px;
+    font-weight: 900;
+    color: #000;
+}
+
+.listing-card:hover {
+    box-shadow: 0px 0px 10px #ddd
+}
+
+.fa-inr {
+    font-size: 70%;
+}
+
+
+/**Media Start**/
+
+@media (min-width:768px) and (max-width:991px) {
+    .listing-booking-card .logo-card img {
+        width: 85px;
+        height: 60px;
+    }
+    .btn-yellow {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+    .listing-card .info {
+        padding: 10px 15px;
+        width: calc(100% - 130px);
+    }
+    .listing-card .info h4 {
+        font-size: 16px;
+    }
+    /****/
+}
+
+@media (max-width:767px) {
+    .listing-booking-card .logo-card img {
+        width: 80px;
+        height: 55px;
+    }
+    .listing-booking-card h4 {
+        font-size: 20px;
+    }
+    .btn-yellow {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .listing-card .info {
+        padding: 10px 15px;
+        width: calc(100% - 110px);
+    }
+    .listing-card .info h4 {
+        font-size: 16px;
+    }
+    .listing-card .info p {
+        font-size: 12px;
+    }
+    .listing-card .info h6 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .listing-card .info span {
+        color: #a3a3a3;
+        font-size: 12px;
+    }
+    /****/
+}
